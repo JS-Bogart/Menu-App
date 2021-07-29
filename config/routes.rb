@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root "static_pages#root"
   
   namespace :api, defaults: {format: :json} do
-    resources :lists
-    resources :list_items
+    resources :list_items, only: [:create, :destroy]
+    resources :lists do 
+      resources :menu_items, only: [:index]
+    end
     resources :menu_items do
       collection { post :import }
     end

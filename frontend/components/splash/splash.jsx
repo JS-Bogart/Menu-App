@@ -1,30 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Uploader from './uploader';
+import MenuList from './menuList';
+import Navbar from '../navbar';
 
 const Splash = (props) => {
 
-  const [menuItems, setMenuItems] = useState([]);
-
-  useEffect(() => {
-    if (props.menuItems.length < 1) {
-      props.requestMenuItems();
-    }
-    if (props.menuItems.length > 0) {
-      const newItems = <ul>
-        {props.menuItems.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-      </ul>;
-      setMenuItems(newItems);
-    }
-  }, [props.menuItems])
-
   return(
     <div>
+      <Navbar />
       <Uploader />
-      <ul>
-        {menuItems}
-      </ul>
+      <MenuList 
+        menuItems={props.menuItems}
+        requestMenuItems={props.requestMenuItems}
+      />
     </div>
   )
 }
