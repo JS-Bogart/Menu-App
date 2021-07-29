@@ -4,7 +4,7 @@ import Category from './category';
 const MenuList = (props) => {
 
   const [menuCategories, setMenuCategories] = useState(
-    <p>No menu items have been added.</p>
+    <li>No menu items have been added.</li>
   );
   const categoryList = ["Appetizers", "Salads", "Pasta", "Sides", "Desserts"];
 

@@ -19,6 +19,12 @@ const Navbar = () => {
       >
         <p>Menu Items</p>
       </div>
+      <div 
+        className="lists-button"
+        onClick={() => handleClick("/lists")}
+      >
+        <p>Lists</p>
+      </div>
     </div>
   )
 }

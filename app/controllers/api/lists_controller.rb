@@ -15,6 +15,7 @@ class Api::ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.save!
+    render "api/lists/show"
   end
 
   def destroy
