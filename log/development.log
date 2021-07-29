@@ -3416,3 +3416,798 @@ Processing by Api::ListsController#create as JSON
 Completed 200 OK in 46ms (Views: 28.5ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/api/menu_items" for ::1 at 2021-07-29 03:32:31 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (5.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/_menu_item.json.jbuilder (1.5ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.6ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.4ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.5ms)
+  Rendered api/menu_items/index.json.jbuilder (162.1ms)
+Completed 200 OK in 219ms (Views: 121.6ms | ActiveRecord: 59.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 10:51:03 -0700
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 4542ms (Views: 4520.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 10:51:13 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (14.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (219.8ms)
+Completed 200 OK in 645ms (Views: 347.3ms | ActiveRecord: 52.0ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:51:25 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (17.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/_menu_item.json.jbuilder (1.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.3ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  Rendered api/menu_items/index.json.jbuilder (254.1ms)
+Completed 200 OK in 1016ms (Views: 251.9ms | ActiveRecord: 80.5ms)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (120.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "menu_app_development"[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (70.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "menu_app_test"[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (336.0ms)[0m  [1m[35mCREATE DATABASE "menu_app_development" ENCODING = 'unicode'[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (170.6ms)[0m  [1m[35mCREATE DATABASE "menu_app_test" ENCODING = 'unicode'[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35mSQL (2.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "list_items" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (42.1ms)[0m  [1m[35mCREATE TABLE "list_items" ("id" bigserial primary key, "menu_item_id" integer NOT NULL, "list_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "lists" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "lists" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "menu_items" CASCADE[0m
+  ↳ db/schema.rb:31
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "menu_items" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying NOT NULL, "category" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210728225502)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210728220247),
+(20210728211332);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (3.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-29 17:53:24.956340"], ["updated_at", "2021-07-29 17:53:24.956340"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "list_items" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "list_items" ("id" bigserial primary key, "menu_item_id" integer NOT NULL, "list_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "lists" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "lists" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "menu_items" CASCADE[0m
+  ↳ db/schema.rb:31
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "menu_items" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying NOT NULL, "category" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210728225502)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210728220247),
+(20210728211332);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-29 17:53:25.106447"], ["updated_at", "2021-07-29 17:53:25.106447"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (1.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2021-07-29 17:53:25.113054"], ["key", "environment"]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5690018824302835050)[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5690018824302835050)[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for ::1 at 2021-07-29 10:54:36 -0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/scottbogart/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2777ms (Views: 2762.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:41 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (12.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (218.3ms)
+Completed 200 OK in 1009ms (Views: 241.7ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:43 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.9ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:43 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.5ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.1ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (2.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.1ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (2.2ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (1.9ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.9ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.4ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.2ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (9.8ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (2.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (10.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (19.8ms)
+Completed 200 OK in 48ms (Views: 37.0ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:44 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:45 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.5ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:49 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (20.9ms)
+Completed 200 OK in 82ms (Views: 68.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:49 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.1ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:50 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (9.3ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:50 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.9ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:50 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (4.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (11.6ms)
+Completed 200 OK in 89ms (Views: 78.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:50 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (25.0ms)
+Completed 200 OK in 71ms (Views: 65.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:50 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.6ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (15.2ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (8.2ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.9ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.6ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.9ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.3ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.2ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.9ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.3ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.0ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.4ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (2.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:51 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (3.0ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (8.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (16.1ms)
+Completed 200 OK in 47ms (Views: 37.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.8ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (5.5ms)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (5.2ms)
+Completed 200 OK in 33ms (Views: 24.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.3ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.4ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.9ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (4.3ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (5.8ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (11.0ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (10.4ms)
+Completed 200 OK in 95ms (Views: 70.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (9.2ms)
+Completed 200 OK in 332ms (Views: 238.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:54 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.4ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:54 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.9ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.1ms)
+Completed 200 OK in 44ms (Views: 37.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:54 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (14.0ms)
+Completed 200 OK in 59ms (Views: 47.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:55 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (3.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (67.2ms)
+Started POST "/api/menu_items/import" for ::1 at 2021-07-29 10:54:55 -0700
+Completed 200 OK in 145ms (Views: 127.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:56 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+Processing by Api::MenuItemsController#import as JSON
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f9cdb3d6e70 @tempfile=#<Tempfile:/var/folders/hf/2m56rh350mnctxtbmwsjqwhc0000gn/T/RackMultipart20210729-33020-5nm61w.csv>, @original_filename="menu_items.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"menu_items.csv\"\r\nContent-Type: text/csv\r\n">}
+  [1m[36mMenuItem Load (44.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (247.4ms)
+Completed 200 OK in 350ms (Views: 303.0ms | ActiveRecord: 44.4ms)
+
+
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (22.8ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "BRUSCHETTA"], ["description", "Roma tomatoes, fresh mozzarella, red onions, basil-infused olive oil & balsamic vinegar, served with parmesan crostini."], ["category", "Appetizers"], ["created_at", "2021-07-29 17:54:56.460261"], ["updated_at", "2021-07-29 17:54:56.460261"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "WORLD FAMOUS MEATBALL"], ["description", "Our famous half-pound meatballs topped with our homemade marinara sauce & creamy ricotta."], ["category", "Appetizers"], ["created_at", "2021-07-29 17:54:56.528898"], ["updated_at", "2021-07-29 17:54:56.528898"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (1.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "FRIED CALAMARI"], ["description", "Served with our homemade spicy marinara sauce."], ["category", "Appetizers"], ["created_at", "2021-07-29 17:54:56.552238"], ["updated_at", "2021-07-29 17:54:56.552238"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (4.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:54:56 -0700
+Processing by Api::MenuItemsController#index as JSON
+  [1m[36mMenuItem Create (140.1ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "APPLE GORGONZOLA"], ["description", "Granny Smith apples, spiced walnuts, dried cranberries & Gorgonzola tossed with mixed lettuce in our signature Italian vinaigrette."], ["category", "Salads"], ["created_at", "2021-07-29 17:54:56.596009"], ["updated_at", "2021-07-29 17:54:56.596009"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Create (19.8ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "CAESAR"], ["description", "Romaine hearts tossed in our signature Caesar dressing with roasted garlic croutons & parmesan."], ["category", "Salads"], ["created_at", "2021-07-29 17:54:56.756160"], ["updated_at", "2021-07-29 17:54:56.756160"]]
+  [1m[36mMenuItem Load (2.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (4.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.8ms)
+  [1m[36mMenuItem Create (1.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MOZZARELLA CAPRESE"], ["description", "Bufala mozzarella, sliced organic tomatoes, basil, oregano, and evoo."], ["category", "Salads"], ["created_at", "2021-07-29 17:54:56.800767"], ["updated_at", "2021-07-29 17:54:56.800767"]]
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.1ms)
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  ↳ app/models/menu_item.rb:14
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/index.json.jbuilder (47.1ms)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+Completed 200 OK in 217ms (Views: 211.0ms | ActiveRecord: 2.1ms)
+
+
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (2.4ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "LASAGNA"], ["description", "Towering layers of meat sauce, ricotta, mozzarella, provolone & parmesan."], ["category", "Pasta"], ["created_at", "2021-07-29 17:54:56.828707"], ["updated_at", "2021-07-29 17:54:56.828707"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (1.0ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "PENNE SAN REMO"], ["description", "Artichoke hearts, sun-dried tomatoes & peas in white wine cream sauce."], ["category", "Pasta"], ["created_at", "2021-07-29 17:54:56.845286"], ["updated_at", "2021-07-29 17:54:56.845286"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "CLASSIC CARBONARA"], ["description", "Prosciutto, peas & garlic in Alfredo sauce."], ["category", "Pasta"], ["created_at", "2021-07-29 17:54:56.859409"], ["updated_at", "2021-07-29 17:54:56.859409"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (1.0ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "RAVIOLI AL POMODORO"], ["description", "Cheese-filled ravioli with our homemade marinara sauce."], ["category", "Pasta"], ["created_at", "2021-07-29 17:54:56.873496"], ["updated_at", "2021-07-29 17:54:56.873496"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.6ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "PAPPARDELLE ALLA BOSCAIOLA"], ["description", "Guten Free flat ribbon pasta with porcini mushrooms, pancetta, light tomato cream sauce"], ["category", "Pasta"], ["created_at", "2021-07-29 17:54:56.891523"], ["updated_at", "2021-07-29 17:54:56.891523"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.8ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ROASTED GARLIC MASHED POTATOES"], ["description", "Roasted garlic redskin mashed potatoes"], ["category", "Sides"], ["created_at", "2021-07-29 17:54:56.909845"], ["updated_at", "2021-07-29 17:54:56.909845"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "BROCCOLI ROMANO"], ["description", "Broccoli with garlic & a light touch of crushed red pepper & parmesan cheese"], ["category", "Sides"], ["created_at", "2021-07-29 17:54:56.925553"], ["updated_at", "2021-07-29 17:54:56.925553"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MEATBALLS, 2 EACH"], ["description", "Our famous meatballs with our homemade marinara sauce. "], ["category", "Sides"], ["created_at", "2021-07-29 17:54:56.941565"], ["updated_at", "2021-07-29 17:54:56.941565"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (1.7ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TIRAMISU"], ["description", "Homemade ladyfingers soaked in dark rum & espresso, layered with sweetened mascarpone cheese & topped with cocoa & crumbled hazelnut biscotti"], ["category", "Desserts"], ["created_at", "2021-07-29 17:54:56.958334"], ["updated_at", "2021-07-29 17:54:56.958334"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (0.9ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "HOMEMADE CHEESECAKE"], ["description", "Rich, creamy cheesecake topped with raspberry sauce & sprinkled with toasted hazelnuts"], ["category", "Desserts"], ["created_at", "2021-07-29 17:54:56.978366"], ["updated_at", "2021-07-29 17:54:56.978366"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/menu_item.rb:14
+  [1m[36mMenuItem Create (1.2ms)[0m  [1m[32mINSERT INTO "menu_items" ("name", "description", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "WORLD'S BEST BROWNIE SUNDAE"], ["description", "Chunks of freshly-baked brownies layered with six scoops of vanilla & chocolate ice cream, topped with caramel & chocolate sauces then buried in mounds of whipped cream & we won’t forget the cherry!"], ["category", "Desserts"], ["created_at", "2021-07-29 17:54:56.996325"], ["updated_at", "2021-07-29 17:54:56.996325"]]
+  ↳ app/models/menu_item.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/menu_item.rb:14
+Completed 202 Accepted in 851ms (Views: 1.2ms | ActiveRecord: 332.1ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 10:55:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 181ms (Views: 161.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/menu_items" for ::1 at 2021-07-29 10:55:13 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (3.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items"[0m
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/_menu_item.json.jbuilder (3.0ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.5ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.7ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.4ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.3ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.8ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.7ms)
+  Rendered api/menu_items/_menu_item.json.jbuilder (0.2ms)
+  Rendered api/menu_items/index.json.jbuilder (180.1ms)
+Completed 200 OK in 208ms (Views: 201.1ms | ActiveRecord: 3.5ms)
+
+
