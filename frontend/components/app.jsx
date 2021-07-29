@@ -3,6 +3,7 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 //Containers:
 import SplashContainer from './splash/splash_container';
 import ItemListsContainer from './item_lists/item_lists_container';
+import ListContainer from './list/list_container';
 
 
 const App = () => (
@@ -10,7 +11,7 @@ const App = () => (
     <Switch>     
       <Route exact path="/" component={SplashContainer} />
       <Route exact path="/lists" component={ItemListsContainer} />
-      {/* <Route exact path="/list/:id" component={ListContainer} /> */}
+      <Route exact path="/lists/:id" component={ListContainer} />
       <Redirect to="/" />
     </Switch>
   </div>

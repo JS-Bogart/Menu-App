@@ -1,6 +1,14 @@
 class Api::ListItemsController < ApplicationController
 
   skip_before_action :verify_authenticity_token
+
+  def show
+    @list_items = ListItem.find_by(
+      list_id: params[:list_id], 
+      menu_item_id: params[:menu_item_id]
+    )
+    render "api/list_items/show"
+  end
   
   def create
     @list_item = ListItem.new(list_item_params)

@@ -8,13 +8,12 @@ const MenuList = (props) => {
   );
   const categoryList = ["Appetizers", "Salads", "Pasta", "Sides", "Desserts"];
 
-  useEffect(() => {
-    if (props.menuItems.length < 1) {
-      props.requestMenuItems();
-    }
+  useEffect(async () => {
     if (props.menuItems.length > 0) {
       const newItems = props.menuItems.map(item => item)
       getCategories(newItems);
+    } else {
+      await props.requestMenuItems();
     }
   }, [props.menuItems])
 

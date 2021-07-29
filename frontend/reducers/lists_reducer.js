@@ -1,4 +1,4 @@
-import { RECIEVE_ITEM_LISTS, ADD_LIST, REMOVE_LIST } from "../actions/item_lists_actions";
+import { RECIEVE_ITEM_LISTS, RECIEVE_LIST_ITEMS, ADD_LIST, REMOVE_LIST } from "../actions/item_lists_actions";
 
 const listsReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -11,6 +11,10 @@ const listsReducer = (state = {}, action) => {
       return nextState;
     case REMOVE_LIST:
       delete nextState[action.list.id];
+      return nextState;
+    case RECIEVE_LIST_ITEMS:
+      const items = Object.values(action.listItems);
+      nextState[action.listId]["items"] = items;
       return nextState;
     default:
       return state;

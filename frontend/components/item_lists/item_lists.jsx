@@ -29,9 +29,18 @@ const ItemLists = (props) => {
     setListName('');
   }
 
+  const handleClick = listId => {
+    props.history.push(`/lists/${listId}`)
+  }
+
   const getItemLists = lists => {
     const listsArray = lists.map(list => (
-      <li key={list.id}>{list.name}</li>
+      <li 
+        key={list.id}
+        onClick={() => handleClick(list.id)}
+      >
+        {list.name}
+      </li>
     ))
 
     setItemLists(listsArray);

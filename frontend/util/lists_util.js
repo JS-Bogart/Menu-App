@@ -46,3 +46,12 @@ export const remove = listItemId => {
     })
   )
 }
+
+export const fetchListItems = listId => {
+  return (
+    $.ajax({
+      method: 'GET',
+      url: `/api/lists/${listId}/menu_items`
+    })
+  )
+}
