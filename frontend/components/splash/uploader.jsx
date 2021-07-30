@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Uploader() {
+const Uploader = (props) => {
   const [selectedFile, setSelectedFile] = useState();
   const [isSelected, setIsSelected] = useState(false);
 
@@ -9,12 +9,12 @@ function Uploader() {
     setIsSelected(true);
   };
 
-  const handleSubmission = () => {
+  const handleSubmission = async () => {
     const formData = new FormData();
 
     formData.append('file', selectedFile);
 
-    fetch(
+    await fetch(
       '/api/menu_items/import',
       {
         method: 'POST',
@@ -28,6 +28,7 @@ function Uploader() {
       .catch((error) => {
         console.error('Error:', error);
       });
+    props.requestMenuItems();
   };
 
   return (

@@ -8,7 +8,7 @@ const Splash = (props) => {
   return(
     <div className="splash">
       <Navbar />
-      <Uploader />
+      <Uploader requestMenuItems={props.requestMenuItems} />
       <MenuList 
         menuItems={props.menuItems}
         requestMenuItems={props.requestMenuItems}

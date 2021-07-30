@@ -6,14 +6,16 @@ const MenuList = (props) => {
   const [menuCategories, setMenuCategories] = useState(
     <li>No menu items have been added.</li>
   );
+  const [itemsRequested, setItemsRequested] = useState(false);
   const categoryList = ["Appetizers", "Salads", "Pasta", "Sides", "Desserts"];
 
   useEffect(async () => {
-    if (props.menuItems.length > 0) {
+    if (!itemsRequested) {
+      await props.requestMenuItems();
+      setItemsRequested(true);
+    } else if (props.menuItems.length > 0) {
       const newItems = props.menuItems.map(item => item)
       getCategories(newItems);
-    } else {
-      await props.requestMenuItems();
     }
   }, [props.menuItems])
 
