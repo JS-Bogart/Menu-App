@@ -1,1 +1,1 @@
-json.extract! list_item, :id, :list_id, :item_id
+json.extract! list_item, :id, :list_id, :menu_item_id

@@ -44,6 +44,10 @@ const List = (props) => {
     props.history.push("/lists");
   }
 
+  const editList = () => {
+    props.history.push(`/lists/edit/${list.id}`);
+  }
+
   return(
     <div>
       <Navbar />
@@ -55,6 +59,12 @@ const List = (props) => {
             onClick={() => deleteList()}
           >
             <p>Delete List</p>
+          </div>
+          <div
+            className="edit-list-button"
+            onClick={() => editList()}
+          >
+            <p>Edit List</p>
           </div>
         </div>
         : null

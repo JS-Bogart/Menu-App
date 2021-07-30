@@ -24,10 +24,10 @@ const listsReducer = (state = {}, action) => {
       nextState[action.listId]["items"] = items;
       return nextState;
     case ADD_ITEM:
-      nextState[action.list_item.list_id]["items"].push(action.itemData);
+      nextState[action.item.list_id]["items"].push(action.itemData);
       return nextState;
     case REMOVE_ITEM:
-      delete nextState[action.list_item.list_id];
+      delete nextState[action.item.list_id]["items"][action.item.menu_item_id];
       return nextState;
     default:
       return state;
