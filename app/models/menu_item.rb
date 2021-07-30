@@ -2,6 +2,7 @@ class MenuItem < ApplicationRecord
   require 'csv'
 
   validates :name, :description, :category, presence: true
+  validates :name, :description, uniqueness: true
 
   has_many :list_items
 
