@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Uploader from './uploader';
 import MenuList from './menuList';
 import Navbar from '../navbar';
@@ -6,7 +6,7 @@ import Navbar from '../navbar';
 const Splash = (props) => {
 
   return(
-    <div>
+    <div className="splash">
       <Navbar />
       <Uploader />
       <MenuList 

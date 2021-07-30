@@ -36,6 +36,7 @@ const ItemLists = (props) => {
   const getItemLists = lists => {
     const listsArray = lists.map(list => (
       <li 
+        className="item-list"
         key={list.id}
         onClick={() => handleClick(list.id)}
       >
@@ -47,27 +48,32 @@ const ItemLists = (props) => {
   }
 
   return(
-    <div>
+    <div className="lists-page">
       <Navbar />
       <div>
-        <div className="list-creator">
-          <p>Create a new List</p>
-          <div>
-            <p>List Name</p>
-            <input 
-              type="text"
-              value={listName}
-              onChange={handleInput()}
-            />
-            <p onClick={() => handleSubmit()}>Create</p>
+        <div className="list-creator-box">
+          <p className="list-page-title">Create a new List</p>
+          <div className="list-creator">
+            <div className="list-input-box">
+              <p>List Name</p>
+              <input 
+                type="text"
+                value={listName}
+                onChange={handleInput()}
+              />
+            </div>
+            <p 
+              className="create-list-button"
+              onClick={() => handleSubmit()}
+            >
+              Create
+            </p>
           </div>
         </div>
-        <div className="lists-list">
-          <p>Lists</p>
-          <ul>
-            {itemLists}
-          </ul>
-        </div>
+        <ul className="lists-list">
+          <li className="lists-title">Lists</li>
+          {itemLists}
+        </ul>
       </div>
     </div>
   )

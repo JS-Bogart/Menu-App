@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(39,39,38);
+}
+
+.navbar-button {
+  background-color: rgb(250,128,53);
+  margin: 40px;
+  padding: 15px;
+  border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.navbar-button > p {
+  color: rgb(39,39,38);
+  font-size: 40px;
+}

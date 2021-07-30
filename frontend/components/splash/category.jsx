@@ -19,9 +19,12 @@ const Category = (props) => {
     })
     const itemList = <ul>
       {newItems.map(item => (
-        <li key={item.id}>
-          <p className="name">{item.name}</p>
-          <p className="description">{item.description}</p>
+        <li 
+          key={item.id}
+          className="menu-item"
+        >
+          <p className="menu-name">{item.name}</p>
+          <p className="menu-description">{item.description}</p>
         </li>
       ))}
     </ul>
@@ -29,8 +32,8 @@ const Category = (props) => {
   }
 
   return(
-    <div>
-      <p className="category">{props.category}</p>
+    <div className="category">
+      <p className="category-name">{props.category}</p>
       <ul>
         {items}
       </ul>

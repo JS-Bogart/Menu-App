@@ -12,15 +12,15 @@ const Navbar = () => {
   }
 
   return(
-    <div>
+    <div className="navbar">
       <div 
-        className="menu-items-button"
+        className="navbar-button"
         onClick={() => handleClick("/")}
       >
         <p>Menu Items</p>
       </div>
       <div 
-        className="lists-button"
+        className="navbar-button"
         onClick={() => handleClick("/lists")}
       >
         <p>Lists</p>
