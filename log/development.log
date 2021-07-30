@@ -35715,3 +35715,809 @@ Processing by Api::MenuItemsController#index as JSON
 Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/" for ::1 at 2021-07-29 16:56:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1282ms (Views: 1267.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 16:56:51 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (35.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (2.7ms)
+  Rendered api/lists/_list.json.jbuilder (3.0ms)
+  Rendered api/lists/index.json.jbuilder (498.0ms)
+Completed 200 OK in 932ms (Views: 327.7ms | ActiveRecord: 250.7ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 16:56:53 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (2.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (129.4ms)
+Completed 200 OK in 788ms (Views: 191.8ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 16:57:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1563ms (Views: 1451.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 16:57:58 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.4ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (32.9ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 16:57:58 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.3ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (6.1ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:01:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 1915ms (Views: 1843.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:01:15 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (19.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (35.6ms)
+Completed 200 OK in 67ms (Views: 43.6ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:01:16 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (21.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (39.1ms)
+Completed 200 OK in 78ms (Views: 53.0ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:03:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 1314ms (Views: 1280.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:03:14 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (36.3ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:03:14 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (7.3ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (24.5ms)
+Completed 200 OK in 65ms (Views: 54.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:03:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2007ms (Views: 1976.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:03:39 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.3ms)
+  Rendered api/lists/_list.json.jbuilder (0.8ms)
+  Rendered api/lists/index.json.jbuilder (20.7ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:03:40 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (4.7ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (11.1ms)
+Completed 200 OK in 32ms (Views: 26.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:06:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 605ms (Views: 571.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:06:55 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (3.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (2.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (38.2ms)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:06:55 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (7.9ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (31.2ms)
+Completed 200 OK in 77ms (Views: 60.4ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/api/lists/2/menu_items" for ::1 at 2021-07-29 17:07:19 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"2"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (4.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 2]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (42.2ms)
+Completed 200 OK in 84ms (Views: 59.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/lists/2/menu_items" for ::1 at 2021-07-29 17:07:19 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"2"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (2.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 2]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.8ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:07:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2977ms (Views: 2846.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:07:54 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (8.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (58.7ms)
+Completed 200 OK in 131ms (Views: 119.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/lists/2/menu_items" for ::1 at 2021-07-29 17:07:54 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"2"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 2]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (7.4ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/api/lists/2" for ::1 at 2021-07-29 17:09:06 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"2", "name"=>"Test list 2"}
+  [1m[36mList Load (4.2ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (18.5ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+No template found for Api::ListsController#destroy, rendering head :no_content
+Completed 204 No Content in 1024ms (ActiveRecord: 31.3ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:12:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 195ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:12:19 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (3.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (4.5ms)
+  Rendered api/lists/index.json.jbuilder (39.6ms)
+Completed 200 OK in 77ms (Views: 70.7ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:12:30 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"Test list 2"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (71.1ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test list 2"], ["created_at", "2021-07-30 00:12:30.587000"], ["updated_at", "2021-07-30 00:12:30.587000"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (11.3ms)
+  Rendered api/lists/show.json.jbuilder (32.5ms)
+Completed 200 OK in 244ms (Views: 76.8ms | ActiveRecord: 74.5ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:12:36 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"Test list 3"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (2.2ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test list 3"], ["created_at", "2021-07-30 00:12:36.160144"], ["updated_at", "2021-07-30 00:12:36.160144"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (2.4ms)
+  Rendered api/lists/show.json.jbuilder (7.6ms)
+Completed 200 OK in 64ms (Views: 41.7ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:12:42 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"Test list 4"}}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (2.1ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test list 4"], ["created_at", "2021-07-30 00:12:42.241709"], ["updated_at", "2021-07-30 00:12:42.241709"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (1.2ms)
+  Rendered api/lists/show.json.jbuilder (6.6ms)
+Completed 200 OK in 70ms (Views: 28.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/lists/5/menu_items" for ::1 at 2021-07-29 17:13:40 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"5"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (17.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 5]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (68.1ms)
+Completed 200 OK in 121ms (Views: 82.7ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/api/lists/5/menu_items" for ::1 at 2021-07-29 17:13:40 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"5"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (0.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 5]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (16.1ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/api/lists/5" for ::1 at 2021-07-29 17:13:48 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"5", "name"=>"Test list 4"}
+  [1m[36mList Load (50.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (7.1ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+No template found for Api::ListsController#destroy, rendering head :no_content
+Completed 204 No Content in 363ms (ActiveRecord: 58.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:19:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1343ms (Views: 1326.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:19:38 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (4.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (10.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.5ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/index.json.jbuilder (45.2ms)
+Completed 200 OK in 74ms (Views: 67.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/lists/5/menu_items" for ::1 at 2021-07-29 17:19:38 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"5"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (6.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 5]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (29.2ms)
+Completed 200 OK in 50ms (Views: 39.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:19:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 517ms (Views: 494.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:19:46 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (2.0ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (9.6ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (72.1ms)
+Completed 200 OK in 138ms (Views: 126.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/lists/4/menu_items" for ::1 at 2021-07-29 17:19:49 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"4"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (6.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 4]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (21.9ms)
+Completed 200 OK in 48ms (Views: 36.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/api/lists/4/menu_items" for ::1 at 2021-07-29 17:19:49 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"4"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 4]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (11.0ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/api/lists/4" for ::1 at 2021-07-29 17:19:54 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"4", "name"=>"Test list 3"}
+  [1m[36mList Load (4.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (14.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (31.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+No template found for Api::ListsController#destroy, rendering head :no_content
+Completed 204 No Content in 373ms (ActiveRecord: 52.5ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:26:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 1204ms (Views: 1179.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:26:44 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (19.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (4.0ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/index.json.jbuilder (180.0ms)
+Completed 200 OK in 395ms (Views: 364.8ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/api/lists/3/menu_items" for ::1 at 2021-07-29 17:26:47 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"3"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (16.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (38.9ms)
+Completed 200 OK in 76ms (Views: 54.3ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/api/lists/3/menu_items" for ::1 at 2021-07-29 17:26:47 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"3"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.6ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (19.1ms)
+Completed 200 OK in 69ms (Views: 54.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:26:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 205ms (Views: 186.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:26:51 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (0.8ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (30.5ms)
+Completed 200 OK in 74ms (Views: 66.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/lists/3/menu_items" for ::1 at 2021-07-29 17:26:52 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"3"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (17.3ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 3]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (38.5ms)
+Completed 200 OK in 74ms (Views: 50.5ms | ActiveRecord: 18.4ms)
+
+
+Started DELETE "/api/lists/3" for ::1 at 2021-07-29 17:27:06 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"3", "name"=>"Test list 2"}
+  [1m[36mList Load (28.0ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (7.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (20.3ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+No template found for Api::ListsController#destroy, rendering head :no_content
+Completed 204 No Content in 400ms (ActiveRecord: 68.2ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:28:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 370ms (Views: 357.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:28:46 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (3.7ms)
+  Rendered api/lists/index.json.jbuilder (66.7ms)
+Completed 200 OK in 131ms (Views: 121.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:28:47 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (2.1ms)
+  Rendered api/lists/index.json.jbuilder (7.7ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:28:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 237ms (Views: 210.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:28:53 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (5.2ms)
+  Rendered api/lists/index.json.jbuilder (27.1ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:30:00 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (3.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (39.5ms)
+Completed 200 OK in 80ms (Views: 59.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:30:01 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.0ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (13.2ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:30:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 761ms (Views: 712.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:30:04 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (4.0ms)
+  Rendered api/lists/index.json.jbuilder (21.7ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/lists/1/menu_items" for ::1 at 2021-07-29 17:30:06 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"1"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (2.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (34.3ms)
+Completed 200 OK in 66ms (Views: 57.5ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/lists/1" for ::1 at 2021-07-29 17:31:43 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"1", "name"=>"Test list 1"}
+  [1m[36mList Load (4.5ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (16.6ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (28.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (0.8ms)
+  Rendered api/lists/show.json.jbuilder (11.5ms)
+Completed 200 OK in 312ms (Views: 29.9ms | ActiveRecord: 154.4ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:31:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 132ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:31:49 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (1.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/index.json.jbuilder (5.3ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:31:55 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"test 1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (11.6ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test 1"], ["created_at", "2021-07-30 00:31:55.847650"], ["updated_at", "2021-07-30 00:31:55.847650"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (0.8ms)
+  Rendered api/lists/show.json.jbuilder (12.3ms)
+Completed 200 OK in 67ms (Views: 33.5ms | ActiveRecord: 13.3ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:32:00 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"test2 "}}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (1.5ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2 "], ["created_at", "2021-07-30 00:32:00.434213"], ["updated_at", "2021-07-30 00:32:00.434213"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (0.7ms)
+  Rendered api/lists/show.json.jbuilder (3.1ms)
+Completed 200 OK in 31ms (Views: 18.3ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:32:04 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"test3"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (1.4ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2021-07-30 00:32:04.489622"], ["updated_at", "2021-07-30 00:32:04.489622"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (2.1ms)
+  Rendered api/lists/show.json.jbuilder (5.6ms)
+Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:32:07 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"test4"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (2.4ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2021-07-30 00:32:08.047974"], ["updated_at", "2021-07-30 00:32:08.047974"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (1.1ms)
+  Rendered api/lists/show.json.jbuilder (25.3ms)
+Completed 200 OK in 118ms (Views: 74.2ms | ActiveRecord: 22.1ms)
+
+
+Started POST "/api/lists" for ::1 at 2021-07-29 17:32:11 -0700
+Processing by Api::ListsController#create as JSON
+  Parameters: {"list"=>{"name"=>"test5"}}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[36mList Create (1.4ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2021-07-30 00:32:11.664213"], ["updated_at", "2021-07-30 00:32:11.664213"]]
+  ↳ app/controllers/api/lists_controller.rb:17
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:17
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (0.7ms)
+  Rendered api/lists/show.json.jbuilder (4.1ms)
+Completed 200 OK in 56ms (Views: 41.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:32:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 225ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:32:15 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (5.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (1.8ms)
+  Rendered api/lists/_list.json.jbuilder (0.3ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.3ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/index.json.jbuilder (53.1ms)
+Completed 200 OK in 85ms (Views: 71.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/api/lists/10/menu_items" for ::1 at 2021-07-29 17:32:21 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"10"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.8ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 10]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (32.4ms)
+Completed 200 OK in 174ms (Views: 49.1ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/api/lists/10/menu_items" for ::1 at 2021-07-29 17:32:22 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"10"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (1.5ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 10]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (13.0ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/api/lists/10" for ::1 at 2021-07-29 17:32:26 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"10", "name"=>"test5"}
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (2.1ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (4.2ms)
+  Rendered api/lists/show.json.jbuilder (8.2ms)
+Completed 200 OK in 49ms (Views: 35.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for ::1 at 2021-07-29 17:40:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 2972ms (Views: 2937.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/lists" for ::1 at 2021-07-29 17:40:41 -0700
+Processing by Api::ListsController#index as JSON
+  Rendering api/lists/index.json.jbuilder
+  [1m[36mList Load (17.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/api/lists/index.json.jbuilder:1
+  Rendered api/lists/_list.json.jbuilder (2.4ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/_list.json.jbuilder (0.1ms)
+  Rendered api/lists/_list.json.jbuilder (0.2ms)
+  Rendered api/lists/index.json.jbuilder (58.0ms)
+Completed 200 OK in 88ms (Views: 66.3ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/api/lists/9/menu_items" for ::1 at 2021-07-29 17:40:46 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"9"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (3.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 9]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (25.9ms)
+Completed 200 OK in 65ms (Views: 50.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/lists/9/menu_items" for ::1 at 2021-07-29 17:40:46 -0700
+Processing by Api::MenuItemsController#index as JSON
+  Parameters: {"list_id"=>"9"}
+  Rendering api/menu_items/index.json.jbuilder
+  [1m[36mMenuItem Load (2.4ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" INNER JOIN "list_items" ON "list_items"."menu_item_id" = "menu_items"."id" INNER JOIN "lists" ON "lists"."id" = "list_items"."list_id" WHERE "lists"."id" = $1[0m  [["id", 9]]
+  ↳ app/views/api/menu_items/index.json.jbuilder:1
+  Rendered api/menu_items/index.json.jbuilder (43.1ms)
+Completed 200 OK in 85ms (Views: 77.6ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/api/lists/9" for ::1 at 2021-07-29 17:40:50 -0700
+Processing by Api::ListsController#destroy as JSON
+  Parameters: {"id"=>"9", "name"=>"test4"}
+  [1m[36mList Load (3.8ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/lists_controller.rb:22
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[36mList Destroy (6.7ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/lists_controller.rb:23
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/lists_controller.rb:23
+  Rendering api/lists/show.json.jbuilder
+  Rendered api/lists/_list.json.jbuilder (1.7ms)
+  Rendered api/lists/show.json.jbuilder (17.8ms)
+Completed 200 OK in 211ms (Views: 55.6ms | ActiveRecord: 19.1ms)
+
+

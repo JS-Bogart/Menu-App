@@ -21,6 +21,7 @@ class Api::ListsController < ApplicationController
   def destroy
     @list = List.find_by(id: params[:id])
     @list.destroy!
+    render "api/lists/show"
   end
 
   private

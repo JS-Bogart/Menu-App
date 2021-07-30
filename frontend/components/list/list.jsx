@@ -3,7 +3,7 @@ import Navbar from '../navbar';
 
 const List = (props) => {
 
-  const [list, setList] = useState([]);
+  const [list, setList] = useState({});
   const [listItems, setListItems] = useState(
     <li>No items have been added to this list.</li>
   );
@@ -18,7 +18,7 @@ const List = (props) => {
     } else if (!itemsRequested) {
       await props.requestListItems(currentListId);
       setItemsRequested(true);
-    } else if (list.length < 1) {
+    } else if (Object.keys(list).length === 0) {
       props.lists.forEach(list => {
         if (list.id === currentListId) {
           setList(list);
@@ -39,10 +39,26 @@ const List = (props) => {
     setListItems(newItems);
   }
 
+  const deleteList = () => {
+    props.removeItemList(list);
+    props.history.push("/lists");
+  }
+
   return(
     <div>
       <Navbar />
-      {list ? <p>{list.name}</p> : null}
+      {list ? 
+        <div>
+          <p>{list.name}</p>
+          <div 
+            className="delete-list-button"
+            onClick={() => deleteList()}
+          >
+            <p>Delete List</p>
+          </div>
+        </div>
+        : null
+      }
       <ul>
         {listItems}
       </ul>

@@ -13,6 +13,7 @@ class Api::ListItemsController < ApplicationController
   def create
     @list_item = ListItem.new(list_item_params)
     @list_item.save!
+    render "api/list_items/show"
   end
 
   def destroy
@@ -21,6 +22,7 @@ class Api::ListItemsController < ApplicationController
       list_id: params[:list_id]
     )
     @list_item.destroy!
+    render "api/list_items/show"
   end
 
   private

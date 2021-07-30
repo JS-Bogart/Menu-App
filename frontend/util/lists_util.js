@@ -38,11 +38,12 @@ export const add = listItem => {
   )
 }
 
-export const remove = listItemId => {
+export const remove = listItem => {
   return (
     $.ajax({
       method: 'DELETE',
-      url: `/api/list_items/${listItemId}`
+      url: `/api/list_items/${listItem.menu_item_id}`,
+      data: listItem
     })
   )
 }

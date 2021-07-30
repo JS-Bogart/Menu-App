@@ -1,5 +1,11 @@
 import { connect } from 'react-redux';
-import { requestItemLists, requestListItems, removeList } from '../../actions/item_lists_actions';
+import { 
+  requestItemLists, 
+  requestListItems, 
+  removeItemList,
+  addItem,
+  removeItem
+} from '../../actions/item_lists_actions';
 import List from './list';
 
 const mapStateToProps = state => {
@@ -13,7 +19,9 @@ const mapDispatchToProps = dispatch => {
   return {
     requestItemLists: () => dispatch(requestItemLists()),
     requestListItems: (listId) => dispatch(requestListItems(listId)),
-    removeList: (list) => dispatch(removeList(list)),
+    removeItemList: (list) => dispatch(removeItemList(list)),
+    addItem: (listItem, itemData) => dispatch(addItem(listItem, itemData)),
+    removeItem: (listItem) => dispatch(removeItem(listItem))
   };
 }
 
