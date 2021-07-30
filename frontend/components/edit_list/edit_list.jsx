@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from '../navbar';
 
 const EditList = (props) => {
 
@@ -7,7 +8,6 @@ const EditList = (props) => {
   const [currentListItems, setCurrentListItems] = useState([]);
   const [editItems, setEditItems] = useState([]);
   const [resourcesLoaded, setResourcesLoaded] = useState(false);
-  // const [itemsLoaded, setItemsLoaded] = useState(false);
   
   useEffect(async () => {
     const { id } = props.match.params;
@@ -30,8 +30,7 @@ const EditList = (props) => {
         }
       })
     } else if (resourcesLoaded) {
-      getItems();  
-      // setItemsLoaded(true);
+      getItems();
     }
   }, [props.lists, currentListItems])
 
@@ -61,7 +60,6 @@ const EditList = (props) => {
   const addToList = async (listId, item) => {
     const listItem = { list_item: {list_id: listId, menu_item_id: item.id} }
     await props.addItem(listItem, item)
-    // getItems();
     updateListAdd(item);
   }
 
@@ -71,32 +69,34 @@ const EditList = (props) => {
     props.menuItems.forEach(item => {
       if (idChecker.includes(item.id)) {
         newItems.push(
-          <li key={item.id}>
-            <div>
+          <li
+            className="edit-list-item"
+            key={item.id}
+          >
+            <div className="edit-list-item-info">
               <p>{item.name}</p>
-              <p>{item.description}</p>
+              <p className="edit-list-item-desc">{item.description}</p>
             </div>
-            <div
+            <p
               className="add-remove-button"
               onClick={() => removeFromList(currentList.id, item.id)}
-            >
-              <p>-</p>
-            </div>
+            >-</p>
           </li>
         )
       } else {
         newItems.push(
-          <li key={item.id}>
-            <div>
+          <li 
+            className="edit-list-item"
+            key={item.id}
+          >
+            <div className="edit-list-item-info">
               <p>{item.name}</p>
-              <p>{item.description}</p>
+              <p className="edit-list-item-desc">{item.description}</p>
             </div>
-            <div
+            <p
               className="add-remove-button"
               onClick={() => addToList(currentList.id, item)}
-            >
-              <p>+</p>
-            </div>
+            >+</p>
           </li>
         )
       }
@@ -109,17 +109,21 @@ const EditList = (props) => {
   }
 
   return(
-    <div>
-      <div>
-        <p>Edit List</p>
-        <div
+    <div className="edit-list-page">
+      <Navbar />
+      <div className="edit-list-header">
+        <p className="edit-list-title">Edit List</p>
+        <p
           className="list-return-button"
           onClick={() => returnButton()}
         >
-          <p>Return to List</p>
-        </div>
+          Return to List
+        </p>
       </div>
-      {editItems}
+      <ul className="edit-items-list">
+        <li className="edit-items-list-title">Items</li>
+        {editItems}
+      </ul>
     </div>
   )
 }

@@ -1,30 +1,24 @@
-.lists-page {
+.edit-list-page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.list-creator-box {
+.edit-list-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.list-page-title {
+.edit-list-title {
   margin: 40px;
   font-size: 40px;
 }
 
-.list-creator {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.create-list-button {
+.list-return-button {
   color: rgb(252,252,252);
   background-color: rgb(250,128,53);
-  margin-left: 40px;
+  margin: 20px;
   padding: 15px;
   border-radius: 10px;
   font-size: 30px;
@@ -33,7 +27,7 @@
     }
 }
 
-.lists-list {
+.edit-items-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +38,7 @@
   margin: 20px;
 }
 
-.lists-title {
+.edit-items-list-title {
   background-color: rgb(250,128,53);
   color: rgb(39,39,38);
   font-size: 40px;
@@ -56,15 +50,30 @@
   border-top-left-radius: 20px;
 }
 
-.item-list {
+.edit-list-item { 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 30px;
+  justify-content: space-between;
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: 2px solid black;
   width: 100%;
+}
+
+.edit-list-item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.edit-list-item-desc {
+  margin-top: 10px;
+}
+
+.add-remove-button {
+  font-size: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
     &:hover {
       cursor: pointer;
     }

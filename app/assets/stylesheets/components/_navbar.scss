@@ -1,8 +1,12 @@
+body {
+  background-color: rgb(252,252,252);
+}
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 100px;
   width: 100%;
   background-color: rgb(39,39,38);
 }

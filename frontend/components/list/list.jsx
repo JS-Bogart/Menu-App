@@ -31,9 +31,12 @@ const List = (props) => {
 
   const getListItems = () => {
     const newItems = list.items.map(item => (
-      <li key={item.id}>
-        <p>{item.name}</p>
-        <p>{item.description}</p>
+      <li 
+        className="list-item"
+        key={item.id}
+      >
+        <p className="list-item-name">{item.name}</p>
+        <p className="list-item-description">{item.description}</p>
       </li>
     ))
     setListItems(newItems);
@@ -49,27 +52,29 @@ const List = (props) => {
   }
 
   return(
-    <div>
+    <div className="list-items-page">
       <Navbar />
       {list ? 
-        <div>
-          <p>{list.name}</p>
-          <div 
-            className="delete-list-button"
-            onClick={() => deleteList()}
-          >
-            <p>Delete List</p>
-          </div>
-          <div
-            className="edit-list-button"
-            onClick={() => editList()}
-          >
-            <p>Edit List</p>
+        <div className="list-items-header">
+          <p className="list-items-title">{list.name}</p>
+          <div className="list-items-button-box">
+            <div 
+              className="item-list-button"
+              onClick={() => deleteList()}
+            >
+              <p>Delete List</p>
+            </div>
+            <div
+              className="item-list-button"
+              onClick={() => editList()}
+            >
+              <p>Edit List</p>
+            </div>
           </div>
         </div>
         : null
       }
-      <ul>
+      <ul className="list-items-list">
         {listItems}
       </ul>
     </div>
