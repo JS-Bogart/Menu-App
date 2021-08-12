@@ -42,7 +42,7 @@ const Uploader = (props) => {
         {isSelected ? (
           <p>File Selected</p>
         ) : (
-          <p>Select a file to show details</p>
+          <p>Select a CSV file</p>
         )}
       </div>
       <button onClick={handleSubmission}>Submit</button>
